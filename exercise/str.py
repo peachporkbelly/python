@@ -39,7 +39,7 @@ sliced = letters[:-2] #-2면 실제로는 -3까지 추출된다
 print(sliced) #abcde
 
 
-######################문자열 split######################
+######################문자열 split() ######################
 """
 하나의 문자열을 작은 문자열들의 "리스트"로 나눈다.
 split() 함수를 사용한다.
@@ -49,7 +49,7 @@ tasks = 'get gloves, get mask, give cat vitamins, call ambluance'
 print(tasks.split(',')) #['get gloves', ' get mask', ' give cat vitamins', ' call ambluance']
 
 
-######################문자열 join######################
+######################문자열 join() ######################
 """
 문자열 리스트를 하나의 문자열로 결합
 """
@@ -57,3 +57,25 @@ crypto_list = ['yeti', 'bigfoot', 'loch ness monster']
 crypto_string = ', '.join(crypto_list)
 print(crypto_string)
 
+######################문자열 대체하기: replace() ######################
+"""
+replace() 인수로는 바꿀 문자열, 대체할 새 문자열, 바꿀 문자열에 대한 횟수를 입력한다.
+원본 문자열은 수정하지 않는다.
+마지막 인수를 생략하면 모든 인스턴스를 바꾼다.
+"""
+setup = "sua is studying python grammar... kinda boring to do :("
+print(setup.replace("sua", "she"))
+
+######################문자열 스트립: strip() ######################
+"""
+문자열 앞 뒤 패딩 없애기
+strip(제거할 내용)
+lstrip() #왼쪽만
+rstrip() #오른쪽만
+"""
+test = "what is love?..."
+print(test.strip('.')) #what is love?
+
+"""
+http://bit.ly/py-docs-strings 에서 더 많은 문자열 메서드를 찾아볼 수 있다.
+"""
